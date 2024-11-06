@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="desain2.css">
+    <title>LOGIN</title>
+</head>
+<body>
+ 
+  <center>
+      <h1>Selamat Datang Dan Silahkan Login dulu</a></h1>
+  </center>
+  <div class="box-login">
+      <form>
+        
+        <center>
+          <h3>Login</h3>
+      </center>
+      
+      <div class="box-form">
+          <label>Username</label> 
+          <input type="text" placeholder="Masukkan username ..">
+      </div>
+      
+      <div class="box-form">
+          <label>Password</label> 
+          <!-- membuat form password dengan id "passwordKu" -->
+          <input type="password" id="passwordKu" placeholder="Masukkan username ..">
+      </div>
+      
+      <!-- membuat form checkbox dengan perintah menjalankan function showHide() saat diklik -->
+      <input type="checkbox" onclick="showHide()"> Tampilkan Password 
+      <br></br>
+    <center>
+     <a href="/utama/HalamanUtama.html" class="tombol-login">LOGIN</a>
+    </center>
+  </form>
+</div>
+ 
+<script type="text/javascript">
+    function showHide() {
+      var inputan = document.getElementById("passwordKu");
+      if (inputan.type === "password") {
+        inputan.type = "text";
+    } else {
+        inputan.type = "password";
+    }
+} 
+</script>
+ 
+</body>
+</html>
